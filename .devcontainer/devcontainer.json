@@ -5,7 +5,7 @@
     "dockerfile": "./Dockerfile",
     "context": ".",
     "args": {
-      "VARIANT": "8.0-jammy"
+      "VARIANT": "9.0"
     }
   },
 
