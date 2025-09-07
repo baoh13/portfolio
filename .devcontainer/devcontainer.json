@@ -20,8 +20,8 @@
   "features": {
     // .NET SDK
     "ghcr.io/devcontainers/features/dotnet:latest": {
-      "version": "6.0",
-      "additionalVersions": "7.0"
+      "version": "9.0",
+      "additionalVersions": "8.0"
     },
 
     // Azure CLI
