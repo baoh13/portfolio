@@ -1,22 +1,42 @@
 [
   {
-    "title": "10 Things To Know About Azure Static Web Apps 🎉",
-    "description": "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    "url": "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+    "title": "Tombola Replatforming Project (.NET 8 Migration)",
+    "description": "Migrated Tombola’s platform from .NET Framework 4.8 to .NET 8 using the Strangler Fig Pattern, consolidating codebases into a unified White Label product while supporting Player Protection Risk Framework and Safeplay systems.",
+    "url": ""
   },
   {
-    "title": "Web Development for Beginners",
-    "description": "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    "url": "https://github.com/microsoft/web-dev-for-beginners"
+    "title": "Customized IAM Solution Migration to Azure AD B2C",
+    "description": "Migrated an in-house IAM solution to Azure AD B2C, introducing MFA, OAuth2, and secure API integrations for ASP.NET MVC and Xamarin apps.",
+    "url": ""
   },
   {
-    "title": "My Resume Site",
-    "description": "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    "url": "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+    "title": "Greenfield Electric Vehicle Solution (BP)",
+    "description": "Developed and launched EV management platforms for fleet managers in Europe using microservices and event-driven architectures across Azure and AWS.",
+    "url": ""
   },
   {
-    "title": "GitHub Codespaces and github.dev",
-    "description": "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    "url": "https://www.youtube.com/watch?v=c3hHhRME_XI"
+    "title": "Akara Platform",
+    "description": "Built a cloud-native platform for event organizers to showcase events and attendee reviews, leveraging .NET Core and Angular.",
+    "url": ""
+  },
+  {
+    "title": "CPA Global Platform",
+    "description": "Developed a cloud-first patent management platform, streamlining CI/CD pipelines and cloud infrastructure for CPA Global.",
+    "url": ""
+  },
+  {
+    "title": "Hospitality SaaS Platform",
+    "description": "Enhanced a global SaaS guest experience platform with new backend architecture and single-page reporting features.",
+    "url": ""
+  },
+  {
+    "title": "Truphone Number Porting System",
+    "description": "Developed an ASP.NET MVC application for number transfer across telecom networks, ensuring seamless integration.",
+    "url": ""
+  },
+  {
+    "title": "Collector Bank Invoicing System",
+    "description": "Maintained complex invoicing and credit systems integrating with Visa, MasterCard, and Experian for Collector Bank.",
+    "url": ""
   }
 ]
