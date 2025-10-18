@@ -1,0 +1,182 @@
+@* @page "/contact" *@
+
+<section class="light contact-section" id="contact">
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon-wrapper">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                </div>
+                <div class="info-content">
+                    <div class="info-label">CALL US ON</div>
+                    <div class="info-value">07928590809</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-wrapper">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <div class="info-content">
+                    <div class="info-label">EMAIL US AT</div>
+                    <div class="info-value">baoh@baohconsulting.co.uk</div>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <div class="icon-wrapper">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <div class="info-content">
+                    <div class="info-label">FIND US AT</div>
+                    <div class="info-value">Hartington Court, Landsdowne Way, London, SW8 2ED</div>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <div class="social-label">FOLLOW US</div>
+                <div class="social-icons">
+                    @* <a href="#" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a> *@
+                    <a href="https://linkedin.com/in/baogiahoang" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                   @*  <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#000" stroke-width="2"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5" fill="#000"></circle>
+                        </svg>
+                    </a> *@
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section" id="edit-form">
+            <h2 class="form-heading">
+                Let's talk<span class="leaf-icon">🍃</span>
+            </h2>
+
+            <EditForm Model="@contactModel" OnValidSubmit="@HandleSubmit" class="contact-form">
+                <DataAnnotationsValidator />
+
+                <div class="form-group">
+                    <InputText @bind-Value="contactModel.Name"
+                               class="form-input"
+                               placeholder="Name*" 
+                               style="width: 100%;" />
+                </div>
+
+                <div class="form-group">
+                    <InputText @bind-Value="contactModel.Email"
+                               class="form-input"
+                               placeholder="Email address*"
+                               style="width: 100%;" />
+                </div>
+
+                <div class="form-group">
+                    <InputText @bind-Value="contactModel.Mobile"
+                               class="form-input"
+                               placeholder="Mobile number*"
+                               style="width: 100%;" />
+                </div>
+
+                <div class="form-group">
+                    <InputText @bind-Value="contactModel.Website"
+                               class="form-input"
+                               placeholder="Website / URL"
+                               style="width: 100%;" />
+                </div>
+
+                <div class="form-group">
+                    <InputSelect @bind-Value="contactModel.EnquiryType" class="form-input" style="width: 100%;">
+                        <option value="">Enquiry Type*</option>
+                        <option value="general">General Enquiry</option>
+                        <option value="support">Support</option>
+                        <option value="sales">Sales</option>
+                        <option value="partnership">Partnership</option>
+                    </InputSelect>
+                </div>
+
+                <div class="form-group">
+                    <InputTextArea @bind-Value="contactModel.Message"
+                                   class="form-input form-textarea"
+                                   placeholder="How can we help?*"
+                                   rows="4" 
+                                   style="width: 100%;" />
+                </div>
+
+                @* <div class="form-group">
+                    <label class="file-upload-btn">
+                        <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                        </svg>
+                        Attach your files
+                        <InputFile OnChange="@HandleFileSelected" class="file-input" multiple />
+                    </label>
+                    @if (selectedFiles.Any())
+                    {
+                        <div class="file-list">
+                            @foreach (var file in selectedFiles)
+                            {
+                                <span class="file-name">@file</span>
+                            }
+                        </div>
+                    }
+                </div> *@
+
+                <button type="submit" class="submit-btn">Send Now</button>
+            </EditForm>
+        </div>
+    </div>
+</section>
+
+@code {
+    private ContactModel contactModel = new();
+    private List<string> selectedFiles = new();
+
+    private async Task HandleSubmit()
+    {
+        // Handle form submission
+        Console.WriteLine("Form submitted");
+    }
+
+    private void HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        selectedFiles.Clear();
+        foreach (var file in e.GetMultipleFiles())
+        {
+            selectedFiles.Add(file.Name);
+        }
+    }
+
+    public class ContactModel
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Mobile { get; set; } = string.Empty;
+        public string Website { get; set; } = string.Empty;
+        public string EnquiryType { get; set; } = string.Empty;
+        public string Message { get; set; } = string.Empty;
+    }
+}
